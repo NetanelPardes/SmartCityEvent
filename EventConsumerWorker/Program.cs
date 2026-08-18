@@ -4,42 +4,56 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EventConsumerWorker.Data;
 using EventConsumerWorker.Services;
+
 class Program
 {
     static async Task Main(string[] args)
     {
         Console.WriteLine("=== Smart City Event Consumer ===\n");
+
         // ============================================
         // PHASE 1: Setup Configuration and DI
         // ============================================
 
         var configuration = new ConfigurationBuilder()
-        .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile("appsettings.json", optional: false)
-        .Build();
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false)
+            .Build();
+
         var services = new ServiceCollection();
 
         // Register DbContext
-        services.AddDbContext<SmartCityDbContext>(options =>
-        options.UseMySql(
-        configuration.GetConnectionString("SmartCityDb"),
-        ServerVersion.AutoDetect(configuration.GetConnectionString("SmartCityDb"))));
+        var connectionString =
+            configuration.GetConnectionString("SmartCityDb");
 
-        // Register our processing service
+        services.AddDbContext<SmartCityDbContext>(options =>
+            options.UseMySql(
+                connectionString,
+                ServerVersion.AutoDetect(connectionString)
+            )
+        );
+
+        // Register processing service
         services.AddScoped<EventProcessingService>();
 
         var serviceProvider = services.BuildServiceProvider();
+
         // ============================================
         // PHASE 2: Create Database
         // ============================================
 
         Console.WriteLine("Creating database...");
+
         using (var scope = serviceProvider.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<SmartCityDbContext>();
+            var db = scope.ServiceProvider
+                .GetRequiredService<SmartCityDbContext>();
+
             db.Database.EnsureCreated();
         }
-        Console.WriteLine(" Database ready\n");
+
+        Console.WriteLine("Database ready\n");
+
         // ============================================
         // PHASE 3: Configure Kafka Consumer
         // ============================================
@@ -49,19 +63,39 @@ class Program
             BootstrapServers = configuration["Kafka:BootstrapServers"],
             GroupId = configuration["Kafka:GroupId"],
             AutoOffsetReset = AutoOffsetReset.Earliest,
-            EnableAutoCommit = false // We'll commit manually after processing
+            EnableAutoCommit = false
         };
-        using var consumer = new ConsumerBuilder<Ignore, string>(consumerConfig).Build();
+
+        using var consumer =
+            new ConsumerBuilder<Ignore, string>(consumerConfig).Build();
+
+        // Read topic names once
+        var trafficTopic =
+            configuration["Kafka:Topics:traffic"]!;
+
+        var weatherTopic =
+            configuration["Kafka:Topics:weather"]!;
+
+        var parkingTopic =
+            configuration["Kafka:Topics:parking"]!;
+
         var topics = new[]
- {
- configuration["Kafka:Topics:Traffic"]!,
- configuration["Kafka:Topics:Weather"]!,
- configuration["Kafka:Topics:Parking"]!
- };
+        {
+            trafficTopic,
+            weatherTopic,
+            parkingTopic
+        };
 
         consumer.Subscribe(topics);
-        Console.WriteLine($"Subscribed to: {string.Join(", ", topics)}");
-        Console.WriteLine("Consuming events... Press Ctrl+C to stop.\n");
+
+        Console.WriteLine(
+            $"Subscribed to: {string.Join(", ", topics)}"
+        );
+
+        Console.WriteLine(
+            "Consuming events... Press Ctrl+C to stop.\n"
+        );
+
         // ============================================
         // PHASE 4: Consume Loop
         // ============================================
@@ -70,39 +104,68 @@ class Program
         {
             while (true)
             {
-                // Wait for a message (timeout after 1 second)
-                var result = consumer.Consume(TimeSpan.FromSeconds(1));
+                // Wait for message
+                var result =
+                    consumer.Consume(TimeSpan.FromSeconds(1));
 
-                // If no message, continue waiting
-                if (result == null || result.Message?.Value == null)
+                // No message received
+                if (result == null ||
+                    result.Message?.Value == null)
+                {
                     continue;
-                Console.WriteLine($"\n[{DateTime.Now:HH:mm:ss}] Received from {result.Topic}");
-                // Create a new scope for this message
-                // This gives us a fresh DbContext
+                }
+
+                Console.WriteLine(
+                    $"\n[{DateTime.Now:HH:mm:ss}] " +
+                    $"Received from {result.Topic}"
+                );
+
+                // Create a new DI scope for every message
                 using (var scope = serviceProvider.CreateScope())
                 {
-                    var processingService = scope.ServiceProvider
-                    .GetRequiredService<EventProcessingService>();
+                    var processingService =
+                        scope.ServiceProvider
+                            .GetRequiredService<EventProcessingService>();
 
-                    // Route to the correct processing method based on topic
                     bool success = result.Topic switch
                     {
-                        var t when t == configuration["Kafka:Topics:Traffic"]
-                        => await processingService.ProcessTrafficEventAsync(result.Message.Value),
-                        var t when t == configuration["Kafka:Topics:Weather"]
-                        => await processingService.ProcessWeatherEventAsync(result.Message.Value),
-                        var t when t == configuration["Kafka:Topics:Parking"]
-                        => await processingService.ProcessParkingEventAsync(result.Message.Value),
+                        var topic when topic == trafficTopic
+                            => await processingService
+                                .ProcessTrafficEventAsync(
+                                    result.Message.Value
+                                ),
+
+                        var topic when topic == weatherTopic
+                            => await processingService
+                                .ProcessWeatherEventAsync(
+                                    result.Message.Value
+                                ),
+
+                        var topic when topic == parkingTopic
+                            => await processingService
+                                .ProcessParkingEventAsync(
+                                    result.Message.Value
+                                ),
+
                         _ => false
                     };
-                    // Commit the offset (tell Kafka we processed this message)
+
+                    // Commit offset after processing
                     if (success)
                     {
+                        Console.WriteLine(
+                            "Event processed successfully."
+                        );
+
                         consumer.Commit(result);
                     }
                     else
                     {
-                        Console.WriteLine(" Processing failed, but committing to avoid reprocessing");
+                        Console.WriteLine(
+                            "Processing failed, " +
+                            "committing to avoid reprocessing."
+                        );
+
                         consumer.Commit(result);
                     }
                 }
@@ -110,12 +173,29 @@ class Program
         }
         catch (OperationCanceledException)
         {
-            Console.WriteLine("\n\nShutting down gracefully...");
+            Console.WriteLine(
+                "\nShutting down gracefully..."
+            );
+        }
+        catch (ConsumeException ex)
+        {
+            Console.WriteLine(
+                $"Kafka consume error: {ex.Error.Reason}"
+            );
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(
+                $"Unexpected error: {ex.Message}"
+            );
         }
         finally
         {
             consumer.Close();
+
             Console.WriteLine("Consumer closed.");
+
+            serviceProvider.Dispose();
         }
     }
 }

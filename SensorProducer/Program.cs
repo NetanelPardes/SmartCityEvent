@@ -7,37 +7,93 @@ public class Program
 {
     public static async Task Main(string[] args)
     {
-        var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: false).Build();
-        
-        string bootstrapServers = configuration["Kafka:BootstrapServers"]!;
-        string trafficTopic = configuration["Kafka:Topics:Traffic"]!;
-        string weatherTopic =configuration["Kafka:Topics:Weather"]!;
-        string parkingTopic = configuration["Kafka:Topics:Parking"]!;
+        var configuration =
+            new ConfigurationBuilder()
+                .SetBasePath(
+                    Directory.GetCurrentDirectory())
+                .AddJsonFile(
+                    "appsettings.json",
+                    optional: false)
+                .Build();
 
-        var ser = new DataLoaderService();
+        string bootstrapServers =
+            configuration["Kafka:BootstrapServers"]!;
 
-        var Parking = ser.LoadParkingData("Data/parking-data.json");
-        var Traffic = ser.LoadTrafficData("Data/traffic-data.json");
-        var Weather = ser.LoadWeatherData("Data/weather-data.json");
+        string trafficTopic =
+            configuration["Kafka:Topics:Traffic"]!;
 
-        var trafficProducer = new KafkaProducerService(bootstrapServers, trafficTopic);
-        var weatherProducer = new KafkaProducerService(bootstrapServers, weatherTopic);
-        var parkingProducer = new KafkaProducerService(bootstrapServers, parkingTopic);
+        string weatherTopic =
+            configuration["Kafka:Topics:Weather"]!;
 
-        foreach (var item in Parking)
+        string parkingTopic =
+            configuration["Kafka:Topics:Parking"]!;
+
+        var dataLoader =
+            new DataLoaderService();
+
+        var parking =
+            dataLoader.LoadParkingData(
+                "Data/parking-data.json");
+
+        var traffic =
+            dataLoader.LoadTrafficData(
+                "Data/traffic-data.json");
+
+        var weather =
+            dataLoader.LoadWeatherData(
+                "Data/weather-data.json");
+
+        var producer =
+            new KafkaProducerService(
+                bootstrapServers);
+
+        // ==========================================
+        // Ensure topics exist
+        // ==========================================
+
+        await producer.EnsureTopicExistsAsync(
+            trafficTopic);
+
+        await producer.EnsureTopicExistsAsync(
+            weatherTopic);
+
+        await producer.EnsureTopicExistsAsync(
+            parkingTopic);
+
+        // ==========================================
+        // Send parking events
+        // ==========================================
+
+        foreach (var item in parking)
         {
-            await trafficProducer.Sendasync(parkingTopic, item);
-        }
-        foreach (var item in Traffic)
-        {
-            await trafficProducer.Sendasync(trafficTopic, item);
-        }
-        foreach (var item in Weather)
-        {
-            await weatherProducer.Sendasync(weatherTopic, item);
+            await producer.SendAsync(
+                parkingTopic,
+                item);
         }
 
-        Console.WriteLine("print a success message");
+        // ==========================================
+        // Send traffic events
+        // ==========================================
 
+        foreach (var item in traffic)
+        {
+            await producer.SendAsync(
+                trafficTopic,
+                item);
+        }
+
+        // ==========================================
+        // Send weather events
+        // ==========================================
+
+        foreach (var item in weather)
+        {
+            await producer.SendAsync(
+                weatherTopic,
+                item);
+        }
+
+        Console.WriteLine(
+            "\nAll events sent successfully.");
     }
 }
