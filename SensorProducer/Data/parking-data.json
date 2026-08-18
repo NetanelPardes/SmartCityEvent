@@ -1,0 +1,302 @@
+[
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 45,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T08:00:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 12,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T08:03:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 78,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T08:06:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 23,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T08:09:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 156,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T08:12:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 42,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T08:15:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 8,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T08:18:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 71,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T08:21:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 18,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T08:24:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 142,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T08:27:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 38,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T08:30:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 5,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T08:33:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 65,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T08:36:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 14,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T08:39:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 128,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T08:42:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 35,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T08:45:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 3,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T08:48:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 59,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T08:51:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 10,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T08:54:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 115,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T08:57:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 31,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T09:00:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 2,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T09:03:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 53,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T09:06:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 7,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T09:09:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 102,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T09:12:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 28,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T09:15:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 1,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T09:18:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 48,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T09:21:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 5,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T09:24:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 89,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T09:27:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 32,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T09:30:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 4,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T09:33:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 55,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T09:36:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 11,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T09:39:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 97,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T09:42:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 36,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T09:45:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 7,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T09:48:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 62,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T09:51:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 16,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T09:54:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 105,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T09:57:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 40,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T10:00:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 10,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T10:03:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 68,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T10:06:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 21,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T10:09:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 112,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T10:12:00Z"
+  },
+  {
+    "Location": "Parking Lot A",
+    "AvailableSpots": 44,
+    "TotalSpots": 100,
+    "Timestamp": "2024-08-17T10:15:00Z"
+  },
+  {
+    "Location": "Parking Lot B",
+    "AvailableSpots": 13,
+    "TotalSpots": 50,
+    "Timestamp": "2024-08-17T10:18:00Z"
+  },
+  {
+    "Location": "Parking Lot C",
+    "AvailableSpots": 74,
+    "TotalSpots": 150,
+    "Timestamp": "2024-08-17T10:21:00Z"
+  },
+  {
+    "Location": "Downtown Garage",
+    "AvailableSpots": 26,
+    "TotalSpots": 200,
+    "Timestamp": "2024-08-17T10:24:00Z"
+  },
+  {
+    "Location": "Mall Parking",
+    "AvailableSpots": 119,
+    "TotalSpots": 300,
+    "Timestamp": "2024-08-17T10:27:00Z"
+  }
+]

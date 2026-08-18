@@ -1,0 +1,302 @@
+[
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 22.5,
+    "Humidity": 65,
+    "Timestamp": "2024-08-17T08:00:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 21.8,
+    "Humidity": 70,
+    "Timestamp": "2024-08-17T08:03:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 23.2,
+    "Humidity": 62,
+    "Timestamp": "2024-08-17T08:06:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 22.0,
+    "Humidity": 68,
+    "Timestamp": "2024-08-17T08:09:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 21.5,
+    "Humidity": 72,
+    "Timestamp": "2024-08-17T08:12:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 23.1,
+    "Humidity": 64,
+    "Timestamp": "2024-08-17T08:15:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 22.3,
+    "Humidity": 69,
+    "Timestamp": "2024-08-17T08:18:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 23.8,
+    "Humidity": 60,
+    "Timestamp": "2024-08-17T08:21:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 22.5,
+    "Humidity": 67,
+    "Timestamp": "2024-08-17T08:24:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 21.9,
+    "Humidity": 71,
+    "Timestamp": "2024-08-17T08:27:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 23.7,
+    "Humidity": 63,
+    "Timestamp": "2024-08-17T08:30:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 22.8,
+    "Humidity": 68,
+    "Timestamp": "2024-08-17T08:33:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 24.3,
+    "Humidity": 59,
+    "Timestamp": "2024-08-17T08:36:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 23.0,
+    "Humidity": 66,
+    "Timestamp": "2024-08-17T08:39:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 22.4,
+    "Humidity": 70,
+    "Timestamp": "2024-08-17T08:42:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 24.2,
+    "Humidity": 62,
+    "Timestamp": "2024-08-17T08:45:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 23.3,
+    "Humidity": 67,
+    "Timestamp": "2024-08-17T08:48:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 24.8,
+    "Humidity": 58,
+    "Timestamp": "2024-08-17T08:51:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 23.5,
+    "Humidity": 65,
+    "Timestamp": "2024-08-17T08:54:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 22.9,
+    "Humidity": 69,
+    "Timestamp": "2024-08-17T08:57:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 24.7,
+    "Humidity": 61,
+    "Timestamp": "2024-08-17T09:00:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 23.8,
+    "Humidity": 66,
+    "Timestamp": "2024-08-17T09:03:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 25.3,
+    "Humidity": 57,
+    "Timestamp": "2024-08-17T09:06:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 24.0,
+    "Humidity": 64,
+    "Timestamp": "2024-08-17T09:09:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 23.4,
+    "Humidity": 68,
+    "Timestamp": "2024-08-17T09:12:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 25.2,
+    "Humidity": 60,
+    "Timestamp": "2024-08-17T09:15:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 24.3,
+    "Humidity": 65,
+    "Timestamp": "2024-08-17T09:18:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 25.8,
+    "Humidity": 56,
+    "Timestamp": "2024-08-17T09:21:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 24.5,
+    "Humidity": 63,
+    "Timestamp": "2024-08-17T09:24:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 23.9,
+    "Humidity": 67,
+    "Timestamp": "2024-08-17T09:27:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 25.7,
+    "Humidity": 59,
+    "Timestamp": "2024-08-17T09:30:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 24.8,
+    "Humidity": 64,
+    "Timestamp": "2024-08-17T09:33:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 26.3,
+    "Humidity": 55,
+    "Timestamp": "2024-08-17T09:36:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 25.0,
+    "Humidity": 62,
+    "Timestamp": "2024-08-17T09:39:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 24.4,
+    "Humidity": 66,
+    "Timestamp": "2024-08-17T09:42:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 26.2,
+    "Humidity": 58,
+    "Timestamp": "2024-08-17T09:45:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 25.3,
+    "Humidity": 63,
+    "Timestamp": "2024-08-17T09:48:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 26.8,
+    "Humidity": 54,
+    "Timestamp": "2024-08-17T09:51:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 25.5,
+    "Humidity": 61,
+    "Timestamp": "2024-08-17T09:54:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 24.9,
+    "Humidity": 65,
+    "Timestamp": "2024-08-17T09:57:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 26.7,
+    "Humidity": 57,
+    "Timestamp": "2024-08-17T10:00:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 25.8,
+    "Humidity": 62,
+    "Timestamp": "2024-08-17T10:03:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 27.3,
+    "Humidity": 53,
+    "Timestamp": "2024-08-17T10:06:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 26.0,
+    "Humidity": 60,
+    "Timestamp": "2024-08-17T10:09:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 25.4,
+    "Humidity": 64,
+    "Timestamp": "2024-08-17T10:12:00Z"
+  },
+  {
+    "Location": "City Center",
+    "TemperatureCelsius": 27.2,
+    "Humidity": 56,
+    "Timestamp": "2024-08-17T10:15:00Z"
+  },
+  {
+    "Location": "North District",
+    "TemperatureCelsius": 26.3,
+    "Humidity": 61,
+    "Timestamp": "2024-08-17T10:18:00Z"
+  },
+  {
+    "Location": "South District",
+    "TemperatureCelsius": 27.8,
+    "Humidity": 52,
+    "Timestamp": "2024-08-17T10:21:00Z"
+  },
+  {
+    "Location": "East District",
+    "TemperatureCelsius": 26.5,
+    "Humidity": 59,
+    "Timestamp": "2024-08-17T10:24:00Z"
+  },
+  {
+    "Location": "West District",
+    "TemperatureCelsius": 25.9,
+    "Humidity": 63,
+    "Timestamp": "2024-08-17T10:27:00Z"
+  }
+]

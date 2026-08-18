@@ -1,0 +1,252 @@
+[
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 23,
+    "Timestamp": "2024-08-17T08:00:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 45,
+    "Timestamp": "2024-08-17T08:03:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 12,
+    "Timestamp": "2024-08-17T08:06:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 28,
+    "Timestamp": "2024-08-17T08:09:00Z"
+  },
+  {
+    "Location": "Highway 101 North",
+    "VehicleCount": 67,
+    "Timestamp": "2024-08-17T08:12:00Z"
+  },
+  {
+    "Location": "Downtown Bridge",
+    "VehicleCount": 34,
+    "Timestamp": "2024-08-17T08:15:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 52,
+    "Timestamp": "2024-08-17T08:18:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 15,
+    "Timestamp": "2024-08-17T08:21:00Z"
+  },
+  {
+    "Location": "City Center Plaza",
+    "VehicleCount": 8,
+    "Timestamp": "2024-08-17T08:24:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 31,
+    "Timestamp": "2024-08-17T08:27:00Z"
+  },
+  {
+    "Location": "Highway 101 South",
+    "VehicleCount": 72,
+    "Timestamp": "2024-08-17T08:30:00Z"
+  },
+  {
+    "Location": "Downtown Bridge",
+    "VehicleCount": 41,
+    "Timestamp": "2024-08-17T08:33:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 38,
+    "Timestamp": "2024-08-17T08:36:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 19,
+    "Timestamp": "2024-08-17T08:39:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 26,
+    "Timestamp": "2024-08-17T08:42:00Z"
+  },
+  {
+    "Location": "Highway 101 North",
+    "VehicleCount": 81,
+    "Timestamp": "2024-08-17T08:45:00Z"
+  },
+  {
+    "Location": "City Center Plaza",
+    "VehicleCount": 11,
+    "Timestamp": "2024-08-17T08:48:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 47,
+    "Timestamp": "2024-08-17T08:51:00Z"
+  },
+  {
+    "Location": "Downtown Bridge",
+    "VehicleCount": 36,
+    "Timestamp": "2024-08-17T08:54:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 29,
+    "Timestamp": "2024-08-17T08:57:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 17,
+    "Timestamp": "2024-08-17T09:00:00Z"
+  },
+  {
+    "Location": "Highway 101 South",
+    "VehicleCount": 88,
+    "Timestamp": "2024-08-17T09:03:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 55,
+    "Timestamp": "2024-08-17T09:06:00Z"
+  },
+  {
+    "Location": "City Center Plaza",
+    "VehicleCount": 14,
+    "Timestamp": "2024-08-17T09:09:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 33,
+    "Timestamp": "2024-08-17T09:12:00Z"
+  },
+  {
+    "Location": "Downtown Bridge",
+    "VehicleCount": 44,
+    "Timestamp": "2024-08-17T09:15:00Z"
+  },
+  {
+    "Location": "Highway 101 North",
+    "VehicleCount": 76,
+    "Timestamp": "2024-08-17T09:18:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 21,
+    "Timestamp": "2024-08-17T09:21:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 49,
+    "Timestamp": "2024-08-17T09:24:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 35,
+    "Timestamp": "2024-08-17T09:27:00Z"
+  },
+  {
+    "Location": "City Center Plaza",
+    "VehicleCount": 9,
+    "Timestamp": "2024-08-17T09:30:00Z"
+  },
+  {
+    "Location": "Highway 101 South",
+    "VehicleCount": 92,
+    "Timestamp": "2024-08-17T09:33:00Z"
+  },
+  {
+    "Location": "Downtown Bridge",
+    "VehicleCount": 39,
+    "Timestamp": "2024-08-17T09:36:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 51,
+    "Timestamp": "2024-08-17T09:39:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 18,
+    "Timestamp": "2024-08-17T09:42:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 27,
+    "Timestamp": "2024-08-17T09:45:00Z"
+  },
+  {
+    "Location": "Highway 101 North",
+    "VehicleCount": 84,
+    "Timestamp": "2024-08-17T09:48:00Z"
+  },
+  {
+    "Location": "City Center Plaza",
+    "VehicleCount": 13,
+    "Timestamp": "2024-08-17T09:51:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 43,
+    "Timestamp": "2024-08-17T09:54:00Z"
+  },
+  {
+    "Location": "Downtown Bridge",
+    "VehicleCount": 37,
+    "Timestamp": "2024-08-17T09:57:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 30,
+    "Timestamp": "2024-08-17T10:00:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 16,
+    "Timestamp": "2024-08-17T10:03:00Z"
+  },
+  {
+    "Location": "Highway 101 South",
+    "VehicleCount": 79,
+    "Timestamp": "2024-08-17T10:06:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 46,
+    "Timestamp": "2024-08-17T10:09:00Z"
+  },
+  {
+    "Location": "City Center Plaza",
+    "VehicleCount": 10,
+    "Timestamp": "2024-08-17T10:12:00Z"
+  },
+  {
+    "Location": "Main St & 5th Ave",
+    "VehicleCount": 32,
+    "Timestamp": "2024-08-17T10:15:00Z"
+  },
+  {
+    "Location": "Downtown Bridge",
+    "VehicleCount": 42,
+    "Timestamp": "2024-08-17T10:18:00Z"
+  },
+  {
+    "Location": "Highway 101 North",
+    "VehicleCount": 73,
+    "Timestamp": "2024-08-17T10:21:00Z"
+  },
+  {
+    "Location": "Park Ave & 23rd St",
+    "VehicleCount": 20,
+    "Timestamp": "2024-08-17T10:24:00Z"
+  },
+  {
+    "Location": "Broadway & 42nd St",
+    "VehicleCount": 50,
+    "Timestamp": "2024-08-17T10:27:00Z"
+  }
+]
